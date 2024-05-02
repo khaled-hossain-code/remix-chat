@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "819022b8d16e5545f600fc7d1ae7f875"
+name = "remix-chat"
+handle = "remix-chat-92"
+application_url = "https://jim-digital-hair-communications.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "aibot24.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://jim-digital-hair-communications.trycloudflare.com/auth/callback",
+  "https://jim-digital-hair-communications.trycloudflare.com/auth/shopify/callback",
+  "https://jim-digital-hair-communications.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
