@@ -1,0 +1,40 @@
+{% assign avg_rating = block.settings.product.metafields.demo.avg_rating.value | round %}
+
+<div class="main">
+  <div
+    id="chat-widget"
+    class="chat-widget-style"
+    onclick="toggleChat()">
+    <span>Chat</span>
+  </div>
+  <div id="chat-window" class="chat-window-style">
+
+    <div id="chat-content" class="chat-content-style"></div>
+    <div id="input-container" class="input-container-style">
+      <input
+        type="text"
+        id="message-input"
+        placeholder="Type your message"
+        class="message-input-style">
+      <button
+        id="send-button"
+        class="send-button-style"
+        onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "remix chat widget",
+  "target": "section",
+  "stylesheet": "app-block.css",
+  "javascript": "app-block.js",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+

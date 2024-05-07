@@ -3,7 +3,7 @@
 client_id = "819022b8d16e5545f600fc7d1ae7f875"
 name = "remix-chat"
 handle = "remix-chat-92"
-application_url = "https://bone-strength-ho-infant.trycloudflare.com"
+application_url = "https://incentives-improvements-sustainable-useful.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_inventory,read_product_listings,read_products,write_discounts,wri
 
 [auth]
 redirect_urls = [
-  "https://bone-strength-ho-infant.trycloudflare.com/auth/callback",
-  "https://bone-strength-ho-infant.trycloudflare.com/auth/shopify/callback",
-  "https://bone-strength-ho-infant.trycloudflare.com/api/auth/callback"
+  "https://incentives-improvements-sustainable-useful.trycloudflare.com/auth/callback",
+  "https://incentives-improvements-sustainable-useful.trycloudflare.com/auth/shopify/callback",
+  "https://incentives-improvements-sustainable-useful.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
